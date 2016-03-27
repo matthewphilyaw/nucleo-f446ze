@@ -36,10 +36,10 @@ int main(void) {
   current_state = LED_OFF;
 
   while (1) {
-	  if (BSP_PB_GetState(BUTTON_USER) > 0) {
-	    state_table[current_state]();
-	    HAL_Delay(250);
-	  }
+    if (BSP_PB_GetState(BUTTON_USER) > 0) {
+      state_table[current_state]();
+      HAL_Delay(250);
+    }
   }
 }
 
